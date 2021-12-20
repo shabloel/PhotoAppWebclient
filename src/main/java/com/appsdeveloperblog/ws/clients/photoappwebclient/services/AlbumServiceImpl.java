@@ -3,14 +3,15 @@ package com.appsdeveloperblog.ws.clients.photoappwebclient.services;
 import com.appsdeveloperblog.ws.clients.photoappwebclient.response.AlbumRest;
 import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
+import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
 import java.util.List;
 
-
+@Service
 public class AlbumServiceImpl implements AlbumService {
 
-    private static final String URL = "http://localhost:8082/albums";
+    private static final String URL = "http://localhost:8083/albums";
 
     //OAuth2ClientService you get out of the box from spring security
     private final OAuth2AuthorizedClientService oauth2ClientService;

@@ -5,9 +5,13 @@
  */
 package com.appsdeveloperblog.ws.clients.photoappwebclient.response;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
+import lombok.NoArgsConstructor;
 
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class AlbumRest {
     private String userId;
     private String albumId;

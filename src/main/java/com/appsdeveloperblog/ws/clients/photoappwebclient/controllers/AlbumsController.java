@@ -30,5 +30,6 @@ public class AlbumsController {
         model.addAttribute("albums", albums);
 
         return "albums";
+
     }
 }
